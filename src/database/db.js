@@ -52,13 +52,12 @@ export const seedNotesData = async () => {
   }
 };
 
-export const resetDatabase = async () => {
-  try {
-    // Step 1: Clear IndexedDB
-    await db.notes.clear();
-    console.log('IndexedDB cleared');
-    console.log('Mock API (db.json) reset to empty state');
-  } catch (error) {
-    console.error('Error resetting database:', error);
-  }
-};
+// export const resetDatabase = async () => {
+//   try {
+
+//     await db.notes.clear();
+//     console.log('IndexedDB cleared');
+//   } catch (error) {
+//     console.error('Error resetting database:', error);
+//   }
+// };

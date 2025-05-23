@@ -34,7 +34,7 @@ const Navbar = () => {
               {isOnline ? 'Online' : 'Offline'}
             </span>
           </li>
-          <button onClick={resetDatabase}>Reset</button>
+          {/* <button onClick={resetDatabase}>Reset</button> */}
         </ul>
       </div>
     </nav>

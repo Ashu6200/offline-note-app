@@ -73,7 +73,6 @@ const Page = () => {
   };
   useEffect(() => {
     if (selectedNote) {
-      console.log(selectedNote);
       db.notes.get(selectedNote).then((storedNote) => {
         if (storedNote) {
           setNoteData(storedNote);
@@ -105,7 +104,7 @@ const Page = () => {
   };
   const handleDelete = async (id) => {
     if (id) {
-      await db.notes.delete(id, { isDeleted: true, synced: false });
+      await db.notes.delete(id);
     }
   };
   return (
